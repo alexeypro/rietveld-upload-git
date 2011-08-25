@@ -1,0 +1,23 @@
+1. Go to :
+   http://www.google.com/enterprise/marketplace/viewListing?productListingId=5143210+12982233047309328439&pli=1
+
+2. Click "Add it now"
+
+3. Check off and enter domain name:
+   [x] I accept. Continue to add this service.
+   Web Address: http://[codereview].alexeypro.com
+
+4. Click "Continue to set up URL"
+
+5. (In other browser window) Sign in to GoDaddy -- follow instructions
+   https://mya.godaddy.com/default.aspx
+
+6. Click "I've completed these steps"
+
+7. Access it here :
+   http://codereview.alexeypro.com/
+
+8. Download upload.py :
+   http://codereview.alexeypro.com/static/upload.py
+
+9. Update 
