@@ -6,7 +6,7 @@
 GIT_ACCOUNT_NAME="qwe3"
 USERNAME_TO_USE="-e me@alexeypro.com"					# leave empty if want to get prompt instead
 REVIEWERS_EMAILS="me@alexeypro.com,alexey@prohorenko.com"		# emails of reviewers
-SERVER="codereview.scopely.com"						# server to upload to
+SERVER="codereview.alexeypro.com"					# server to upload to
 RUNNING_FROM=`dirname $0`						# path where the script is
 UPLOAD_PY="$RUNNING_FROM/upload-082511.py"				# path to upload.py
 SERVER_TYPE="HOSTED"							# can be HOSTED or GOOGLE
