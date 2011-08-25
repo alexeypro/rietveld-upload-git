@@ -20,4 +20,12 @@
 8. Download upload.py :
    http://codereview.alexeypro.com/static/upload.py
 
-9. Update 
+9. Modify upload-git.sh with your email and paths.
+
+10. Update Git pre-commit hookups : 
+   $ cd /code/git/my-repository
+   $ /bin/sh /path/where/rietveld-upload-git-is/install-git-hooks.sh
+
+11. That's it.
+
+
