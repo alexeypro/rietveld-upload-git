@@ -15,9 +15,10 @@ SERVER_TYPE="HOSTED"							# can be HOSTED or GOOGLE
 ### You should not update down below unless you want to break stuff
 ### For full list of options refer to: http://code.google.com/p/rietveld/wiki/UploadPyUsage
 ###
+MESSAGE_ISSUE=`cat .git/COMMIT_EDITMSG`
 PYTHON_BIN=`which python`
 GIT_BIN=`which git`
 GIT_BRANCH=`$GIT_BIN name-rev --name-only HEAD`
 GIT_PROJECT=`cat .git/FETCH_HEAD | cut -f 2 -d"/"`
 BASE_URL="https://github.com/$GIT_ACCOUNT_NAME/$GIT_PROJECT/tree/$GIT_BRANCH"
-$PYTHON_BIN $UPLOAD_PY --rev=$GIT_BRANCH -s $SERVER $USERNAME_TO_USE --account_type=$SERVER_TYPE -r $REVIEWERS_EMAILS --send_mail --base_url=$BASE_URL
+$PYTHON_BIN $UPLOAD_PY --rev=$GIT_BRANCH -s $SERVER $USERNAME_TO_USE --account_type=$SERVER_TYPE -r $REVIEWERS_EMAILS --send_mail --base_url=$BASE_URL -m "$MESSAGE_ISSUE"
