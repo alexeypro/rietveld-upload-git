@@ -15,7 +15,7 @@ SERVER_TYPE="HOSTED"							# can be HOSTED or GOOGLE
 ### You should not update down below unless you want to break stuff
 ### For full list of options refer to: http://code.google.com/p/rietveld/wiki/UploadPyUsage
 ###
-MESSAGE_ISSUE=`cat .git/COMMIT_EDITMSG`
+MESSAGE_ISSUE=`cat .git/COMMIT_EDITMSG | cut -c1-99`
 PYTHON_BIN=`which python`
 GIT_BIN=`which git`
 GIT_PROJECT=`git config --get remote.origin.url | cut -f 2 -d ":" | cut -f 1 -d "/"`
